@@ -10,7 +10,7 @@ stdeer = result.stderr
 
 if stdeer:
     print(stdeer)
-    exit(0)
+    exit(1)
 
 pattern = r'Queue count.*'
 tmp = re.search(pattern=pattern, string=stdout)
