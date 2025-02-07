@@ -1,0 +1,1 @@
+$pingResult = ping $args[0]; $match = $pingResult | Select-String "Received = (\d+)"; if ($match -match "Received = (\d+)") { Write-Output $matches[1] } else { Write-Output "0" }
