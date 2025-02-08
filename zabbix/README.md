@@ -1,6 +1,22 @@
-1. directory for *.conf files /etc/zabbix/zabbix_agent2.d
-2. /etc/zabbix/zabbix_agent2.conf  Timeout=15
-3. Don't forget "chmod +x" for scripts!
-4. Add zabbix user to docker group
-5. pip install psutil
-6. apt install jq ?
+nix
+***
+1. /etc/zabbix/zabbix_agent2.conf Timeout=15
+2. Сделать права всем скриптам на исполнение в /etc/zabbix/scripts "chmod +x"
+3. Add zabbix user to docker group
+4. pip install psutil
+5. apt install jq
+6. systemctl restart zabbix-agent2.service
+7. apt install network-tools
+
+win
+***
+1. Press Win + R, type services.msc, and press Enter.
+2. Find Zabbix Agent 2 in the list.
+3. Right-click → Properties.
+4. A window will open with the following tabs: "General", "Log On", "Recovery", and "Dependencies".
+5. Switch to the "Log On" tab.
+6. Select "This account" and enter an administrator account.
+7. Enter the password and click OK.
+8. Restart the service:
+    - Go back to the "General" tab.
+    - Click "Stop", then "Start".
