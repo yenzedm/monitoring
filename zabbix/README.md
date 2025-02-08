@@ -1,7 +1,7 @@
 nix
 ***
-1. /etc/zabbix/zabbix_agent2.conf Timeout=15
-2. Сделать права всем скриптам на исполнение в /etc/zabbix/scripts "chmod +x"
+1. Change timeout in /etc/zabbix/zabbix_agent2.conf Timeout=15
+2. All scripts in /etc/zabbix/scripts do "chmod +x"
 3. Add zabbix user to docker group
 4. pip install psutil
 5. apt install jq
