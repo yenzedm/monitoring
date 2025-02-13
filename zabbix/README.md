@@ -10,6 +10,9 @@ nix
 
 win
 ***
+install:
+1. psutil
+***
 1. Press Win + R, type services.msc, and press Enter.
 2. Find Zabbix Agent 2 in the list.
 3. Right-click → Properties.
